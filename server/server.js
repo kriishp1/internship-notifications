@@ -38,9 +38,6 @@ app.listen(8000, () => {
 });
 
 
-
-
-
 //TWILIO MSG
 
 const accountSID = process.env.ACC_SID;
@@ -64,7 +61,7 @@ async function CheckNewJobs() {
 
         for (const job of newJobs) {
             await client.messages.create({
-                body: `New Internship: ${job.title} - ${job.location || "Location N/A"}`,
+                body: `New Internship: ${job.title} - ${job.city}, ${job.state} || "Location N/A"}`,
                 from: process.env.TWILIO_NUMBER,
                 to: process.env.MY_NUMBER
             });
