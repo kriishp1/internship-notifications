@@ -1,7 +1,7 @@
 # Internship SMS | Express.js, Twilio, RapidAPI
 *Notification system for new internship opportunities*
 
-![Internship SMS Screenshot](public/img.PNG)
+![Internship SMS Screenshot](client/CostOfLiving/public/img.PNG)
 
 **Internship SMS** is a lightweight Node.js application that sends SMS alerts whenever new internship opportunities are posted. It leverages **RapidAPI** to fetch the latest listings and **Twilio** to deliver instant notifications directly to your phone. Built with **Express.js**, it handles backend logic efficiently and is easy to run locally.
 
